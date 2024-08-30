@@ -1,0 +1,107 @@
+.answers-container {
+    margin-top: 20px;
+  }
+  
+  .answers-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .answer-item {
+    margin-bottom: 20px;
+  }
+  
+  .result-flag-image {
+    width: 100px;
+    height: auto;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+  }
+  
+  .correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: red;
+    color: white;
+  }
+  
+  .correct-answer {
+    background-color: orange;
+    color: white;
+  }
+  
+  .home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    border: none;
+    font-size: 24px;
+    color: #333333;
+    cursor: pointer;
+  }
+  
+  .confirmation-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #241e2b;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  }
+  
+  .confirmation-popup p {
+      margin-bottom: 20px;
+      color: #ffffff;
+  }
+  
+  .confirmation-popup button {
+      margin-right: 10px;
+  }
+  
+  .results-container p {
+    margin: 10px 0;
+    white-space: nowrap; /* Assure que le texte reste sur une seule ligne */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+}
+
+.results-container .home-button {
+    margin-top: 20px;
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #241e2b;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.confirmation-popup button {
+    margin: 5px;
+}

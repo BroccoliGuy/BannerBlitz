@@ -1,0 +1,127 @@
+/* Quiz Container */
+.quiz-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box; /* Garantit que le padding est inclus dans la hauteur totale */
+  }
+  
+  /* Timer Styling */
+  .timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Flag Image Styling */
+  .flag-container {
+    width: 300px; /* Ajuste la largeur du conteneur du drapeau */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+  }
+  
+  .flag-image {
+    max-width: 100%; /* Assure que l'image s'adapte au conteneur */
+    max-height: 100%; /* Assure que l'image s'adapte au conteneur */
+  }
+  
+  /* Choices Button Container Styling */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 300px; /* Ajuste la largeur du conteneur des boutons */
+    height: 500px;
+  }
+  
+  /* Choice Button Styling */
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Results Styling */
+  .results {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Correct Answer Styling */
+  .correct-answer {
+    color: orange;
+  }
+  
+  /* Incorrect Answer Styling */
+  .incorrect-answer {
+    color: red;
+  }
+
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    border: none;
+    font-size: 24px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #241e2b;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.confirmation-popup p {
+    margin-bottom: 20px;
+}
+
+.confirmation-popup button {
+    margin-right: 10px;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.loading-spinner p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}

@@ -1,0 +1,94 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.mode-list {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #241e2b;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.mode-item {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-item.selected,
+.mode-item:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.mode-description {
+    width: 75%;
+    padding: 20px;
+}
+
+.start-button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+
+.custom-options {
+    margin-top: 20px;
+}
+
+.custom-options label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.custom-options input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.start-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button.disabled {
+    background-color: #d3d3d3; /* Couleur de fond pour le bouton désactivé */
+    color: #8a8a8a; /* Couleur du texte pour le bouton désactivé */
+    cursor: not-allowed; /* Curseur "non autorisé" pour l'état désactivé */
+}
+
+.start-button:hover:not(.disabled) {
+    background-color: #0056b3; /* Couleur de fond pour le bouton en état hover */
+}
