@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BannerBlitz/static/css/main.a60a283f.css",
-    "main.js": "/BannerBlitz/static/js/main.eb5f8bc4.js",
+    "main.css": "/BannerBlitz/static/css/main.790cec0c.css",
+    "main.js": "/BannerBlitz/static/js/main.70816713.js",
     "static/media/Bhoutan.png": "/BannerBlitz/static/media/Bhoutan.efe2c962833fa283a011.png",
     "static/media/Saint-Marin.png": "/BannerBlitz/static/media/Saint-Marin.e950a7b94dcc66557ac8.png",
     "static/media/Turkménistan.png": "/BannerBlitz/static/media/Turkménistan.8a2b9300f41d46173c96.png",
@@ -92,11 +92,11 @@
     "static/media/Barbade.png": "/BannerBlitz/static/media/Barbade.85f4eab35f594aa9c080.png",
     "static/media/Soudan du Sud.png": "/BannerBlitz/static/media/Soudan du Sud.241898c7416933eee414.png",
     "index.html": "/BannerBlitz/index.html",
-    "main.a60a283f.css.map": "/BannerBlitz/static/css/main.a60a283f.css.map",
-    "main.eb5f8bc4.js.map": "/BannerBlitz/static/js/main.eb5f8bc4.js.map"
+    "main.790cec0c.css.map": "/BannerBlitz/static/css/main.790cec0c.css.map",
+    "main.70816713.js.map": "/BannerBlitz/static/js/main.70816713.js.map"
   },
   "entrypoints": [
-    "static/css/main.a60a283f.css",
-    "static/js/main.eb5f8bc4.js"
+    "static/css/main.790cec0c.css",
+    "static/js/main.70816713.js"
   ]
 }
