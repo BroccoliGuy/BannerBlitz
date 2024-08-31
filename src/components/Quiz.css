@@ -19,7 +19,7 @@
   
   /* Flag Image Styling */
   .flag-container {
-    width: 300px; /* Ajuste la largeur du conteneur du drapeau */
+    width: 500px; /* Ajuste la largeur du conteneur du drapeau */
     height: auto;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -39,7 +39,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 300px; /* Ajuste la largeur du conteneur des boutons */
-    height: 500px;
+    height: 150px;
   }
   
   /* Choice Button Styling */

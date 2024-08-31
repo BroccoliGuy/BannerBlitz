@@ -21,7 +21,6 @@ const Quiz = () => {
 
     const limit = location.state?.limit || contextLimit;
 
-    // Fonction pour mélanger un tableau
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -30,7 +29,6 @@ const Quiz = () => {
         return array;
     };
 
-    // Fonction pour générer les choix pour une question
     const generateChoices = useCallback((correctFlagName) => {
         const flagNames = Object.keys(flagImages);
         let choicesArray = [correctFlagName.replace('.png', '')];
@@ -103,6 +101,7 @@ const Quiz = () => {
         const images = importAll(require.context('../assets/flags', false, /\.(png)$/));
         setFlagImages(images);
 
+        // Log the number of flags loaded
         console.log(`Total flags loaded: ${Object.keys(images).length}`);
 
         let flagsToUse = Object.keys(images);
@@ -137,11 +136,8 @@ const Quiz = () => {
                 const img = new Image();
                 img.src = flagImages[upcomingFlag];
             }
-        } else {
-            // Si la queue est vide, redirigez vers la page des résultats
-            navigate('/results', { state: { questionsAnswered: answeredQuestions } });
         }
-    }, [flagsQueue, flagImages, generateChoices, navigate, answeredQuestions]);
+    }, [flagsQueue, flagImages, generateChoices]);
 
     const handleAnswer = (selectedChoice) => {
         setAnsweredQuestions(prevCount => prevCount + 1);
